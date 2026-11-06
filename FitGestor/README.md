@@ -151,7 +151,7 @@ O projeto utiliza SQLite para persistir os dados localmente no dispositivo. A ta
 ## Link do GitHub
 Insira o link do repositório público do projeto aqui:
 
-`https://github.com/SEU_USUARIO/SEU_REPOSITORIO`
+`https://github.com/josiel447/FitGestorAPPHOJE`
 
 ## Autor
 Josiel dos Santos
