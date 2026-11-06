@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Topo com Botão Voltar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:backgroundTint="#252830"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="← Voltar"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:text="Nova Matrícula"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Campo: Nome Completo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="NOME COMPLETO *"
+            android:textColor="@color/text_muted"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Ex: João da Silva"
+            android:inputType="textCapWords"
+            android:paddingHorizontal="14dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_muted"
+            android:textSize="14sp" />
+
+        <!-- Campo: CPF -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="CPF (APENAS NÚMEROS) *"
+            android:textColor="@color/text_muted"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCpf"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Ex: 12345678901 (11 dígitos)"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingHorizontal="14dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_muted"
+            android:textSize="14sp" />
+
+        <!-- Campo: Telefone -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="TELEFONE / WHATSAPP *"
+            android:textColor="@color/text_muted"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Ex: 61999998888"
+            android:inputType="phone"
+            android:paddingHorizontal="14dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_muted"
+            android:textSize="14sp" />
+
+        <!-- Campo: Plano de Treino (RF03) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="PLANO DE TREINO / ADESÃO *"
+            android:textColor="@color/text_muted"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spPlanos"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_input_field"
+            android:paddingHorizontal="10dp" />
+
+        <!-- Campo: Dia de Vencimento -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="DIA DO VENCIMENTO DA MENSALIDADE *"
+            android:textColor="@color/text_muted"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spDiaVencimento"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_input_field"
+            android:paddingHorizontal="10dp" />
+
+        <!-- Resumo do Valor do Plano Selecionado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_card_rounded"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Valor Previsto da Mensalidade:"
+                android:textColor="@color/text_muted"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvValorCalculado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 120,00"
+                android:textColor="@color/green_status"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Botões de Ação -->
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/primary_orange"
+            android:text="CONFIRMAR MATRÍCULA"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

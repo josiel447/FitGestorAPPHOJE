@@ -1,1 +1,19 @@
-/FitGestor
+# Gradle and build outputs
+.gradle/
+**/build/
+
+# Local Android SDK configuration
+local.properties
+
+# Android Studio and IDE files
+.idea/
+*.iml
+
+# Generated native build files
+.externalNativeBuild/
+.cxx/
+
+# Local captures and operating system files
+captures/
+.DS_Store
+Thumbs.db

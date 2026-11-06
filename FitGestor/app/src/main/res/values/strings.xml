@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FitGestor Mobile</string>
+    <string name="subtitle_gestor">Gestor: Josiel dos Santos (202511319)</string>
+    <string name="regulares">REGULARES</string>
+    <string name="inadimplentes">INADIMPLENTES</string>
+    <string name="total_alunos">TOTAL</string>
+    <string name="btn_novo_aluno">+ MATRICULAR NOVO ALUNO</string>
+    <string name="title_alunos">ALUNOS CADASTRADOS</string>
+    <string name="hint_buscar">Buscar por nome ou CPF...</string>
+    <string name="filter_todos">Todos</string>
+    <string name="filter_regulares">Regulares</string>
+    <string name="filter_inadimplentes">Inadimplentes</string>
+    <string name="filter_inativos">Inativos</string>
+</resources>
